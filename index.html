@@ -5,21 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albercas Fiesta Feliz</title>
     <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Estilos adicionales para organizar las fotos */
+            .photo-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .photo-grid img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .photo-caption {
+                text-align: center;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        </style>
 </head>
 <body>
     <header>
-        <h1>Albercas Fiesta Feliz</h1>
+        <h1>🌊 Albercas Fiesta Feliz</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="precios.html">Precios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+    
     <main>
         <section>
             <h2>Convierte tu evento en un paraíso</h2>
             <p>Renta nuestras albercas y disfruta de momentos inolvidables.</p>
-            <img src="alberca.jpg" alt="Imagen de alberca">
+            <div class="photo-grid">
+                <div>
+                    <img src="Alberca 1.jpeg" alt="Alberca elegante">
+                    <p class="photo-caption">Alberca Elegante</p>
+                </div>
+                <div>
+                    <img src="Alberca 2.jpg" alt="Alberca con luces nocturnas">
+                    <p class="photo-caption">Alberca con Luces Nocturnas</p>
+                </div>
+                <div>
+                    <img src="Alberca 3.jpg" alt="Alberca con tobogán">
+                    <p class="photo-caption">Alberca con Tobogán</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -27,3 +63,4 @@
     </footer>
 </body>
 </html>
+
