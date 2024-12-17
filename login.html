@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios - Albercas Fiesta Feliz</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Albercas Fiesta Feliz</h1>
+        <h1>Iniciar Sesión</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="registro.html">Registro</a>
@@ -17,17 +17,15 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Precios de Renta</h2>
-            <ul>
-                <li>Paquete Básico: $1,500 MXN</li>
-                <li>Paquete Fiesta: $3,000 MXN</li>
-                <li>Paquete Deluxe: $5,000 MXN</li>
-            </ul>
-        </section>
+        <form action="php/login.php" method="POST">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
     </main>
-    <footer>
-        <p>&copy; 2024 Albercas Fiesta Feliz. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
